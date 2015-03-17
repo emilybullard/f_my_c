@@ -2,6 +2,8 @@
 	<% if current_user %>
 		Welcome <strong><%= current_user.name %></strong>!
 		<%= link_to "Sign Out", signout_path, id: "sign_out" %>
+		<br>
+		<%= image_tag current_user.avatar %>
 	<% else %>
 		<%= link_to "Sign in with Github", "/auth/github", id: "sign_in" %>
 	<% end %>

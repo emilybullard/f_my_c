@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'users/profile/:id' => 'users#profile', as: 'profile'
 
+  get 'users/repository/' => 'users#repository', as: 'repository'
+
   get 'user/new'
 
   get "/auth/:provider/callback" => "sessions#create"
