@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "figaro"
 gem "omniauth-github", '1.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
