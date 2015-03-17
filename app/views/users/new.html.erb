@@ -1,6 +1,6 @@
 <div class="user-widget">
 	<% if current_user %>
-		Welcome <strong><%= current_user.name %></strong>!
+		Welcome <strong><%= current_user.name %> <%= current_user.email %> <%= current_user.username %></strong>!
 		<%= link_to "Sign Out", signout_path, id: "sign_out" %>
 		<br>
 		<%= image_tag current_user.avatar %>
